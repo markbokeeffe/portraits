@@ -16,6 +16,9 @@ import {MatTabsModule} from '@angular/material';
 import { HeaderComponent } from './header/header.component';
 import { FixedHeaderComponent } from './fixed-header/fixed-header.component';
 import { HomeContentComponent } from './home-content/home-content.component';
+import { PortraitGalleryComponent } from './portrait-gallery/portrait-gallery.component';
+import { PresentationGalleryComponent } from './presentation-gallery/presentation-gallery.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -23,7 +26,10 @@ import { HomeContentComponent } from './home-content/home-content.component';
     AppComponent,
     HeaderComponent,
     FixedHeaderComponent,
-    HomeContentComponent
+    HomeContentComponent,
+    PortraitGalleryComponent,
+    PresentationGalleryComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
