@@ -1,0 +1,19 @@
+.home-content-area{
+  width:100%;
+  padding: 50px 50px 96px;
+  box-sizing: border-box;
+  background-color:#f9f9f9;
+}
+
+.content-bar{
+  background-color:#fff;
+
+}
+
+.content-bar.fixed{
+  position:fixed;
+  top:64px;
+  left:0px;
+  min-height:46px;
+  height:46px;
+}
