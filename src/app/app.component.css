@@ -1,14 +1,12 @@
 .site-content{
   background-color: #f9f9f9;
-  margin-top: 210px;
+  margin-top: 274px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   z-index: 2;
   position: relative;
 }
-
-
 
 .site-content, .site-content *{
   box-sizing: border-box;

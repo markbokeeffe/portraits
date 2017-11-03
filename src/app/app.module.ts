@@ -20,6 +20,7 @@ import { HomeContentComponent } from './home-content/home-content.component';
 import { PortraitGalleryComponent } from './portrait-gallery/portrait-gallery.component';
 import { PresentationGalleryComponent } from './presentation-gallery/presentation-gallery.component';
 import { AboutComponent } from './about/about.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { AboutComponent } from './about/about.component';
     HomeContentComponent,
     PortraitGalleryComponent,
     PresentationGalleryComponent,
-    AboutComponent
+    AboutComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +43,32 @@ import { AboutComponent } from './about/about.component';
     MatExpansionModule,
     MatListModule,
     MatTabsModule,
+    RouterModule.forRoot([
+      {
+        path: '',
+        component: HomeContentComponent
+      },
+      {
+        path: 'home',
+        component: HomeContentComponent
+      },
+      {
+        path: 'portraits',
+        component: PortraitGalleryComponent
+      },
+      {
+        path: 'presentations',
+        component: PresentationGalleryComponent
+      },
+      {
+        path: 'about',
+        component: AboutComponent
+      },
+      {
+        path: 'contact',
+        component: ContactComponent
+      },
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
