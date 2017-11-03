@@ -21,7 +21,7 @@ import { PortraitGalleryComponent } from './portrait-gallery/portrait-gallery.co
 import { PresentationGalleryComponent } from './presentation-gallery/presentation-gallery.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +32,8 @@ import { FooterComponent } from './footer/footer.component';
     PortraitGalleryComponent,
     PresentationGalleryComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -67,7 +68,7 @@ import { FooterComponent } from './footer/footer.component';
       {
         path: 'contact',
         component: ContactComponent
-      },
+      }
     ])
   ],
   providers: [],
