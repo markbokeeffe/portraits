@@ -1,10 +1,10 @@
 
 <mat-toolbar class="header" color="primary">
   App
+  <span class="fill-space"></span>
   <nav>
-    <a routerLink="/portraits">Portraits</a>
-    <a routerLink="/presentations">Presentations</a>
-    <a routerLink="/about">About</a>
-    <a routerLink="/contact">Contact</a>
+    <a routerLink="/{{screen.path}}" (click)="isClicked=i" [class.selected]="i === isClicked" *ngFor="let screen of screens; let i = index">
+      {{ screen.name }}
+    </a>
   </nav>
 </mat-toolbar>

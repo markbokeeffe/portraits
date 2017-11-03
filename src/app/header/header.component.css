@@ -9,6 +9,23 @@ mat-toolbar.header{
   z-index:3;
 }
 
+.fill-space{
+  flex: 1 1 auto;
+}
+
 nav{
-font-family: 'Nothing You Could Do', cursive;
+  font-family: 'Nothing You Could Do', cursive;
+}
+
+nav a{
+  color:#fff;
+  text-decoration:none;
+}
+
+nav a:hover{
+  color:gray;
+}
+
+nav a.selected{
+  color:#a7a5a5;
 }
