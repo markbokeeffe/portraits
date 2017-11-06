@@ -1,5 +1,19 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans');
 
 body{
   margin:0px;
+  font-family:'PT Sans', sans-serif;
+}
+
+.mat-tab-body{
+  padding:10px 3%;
+}
+
+.bold{
+  font-weight:bold;
+}
+
+.carousel-nav-list{
+  display:none !important;
 }

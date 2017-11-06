@@ -17,7 +17,7 @@ nav{
   font-family: 'Nothing You Could Do', cursive;
 }
 
-nav a{
+nav a, a.logo{
   color:#fff;
   text-decoration:none;
 }
@@ -28,4 +28,8 @@ nav a:hover{
 
 nav a.selected{
   color:#a7a5a5;
+}
+
+a.logo.selected{
+  color:#fff;
 }

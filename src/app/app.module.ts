@@ -13,6 +13,7 @@ import {MatGridListModule} from '@angular/material';
 import {MatExpansionModule} from '@angular/material';
 import {MatListModule} from '@angular/material';
 import {MatTabsModule} from '@angular/material';
+import { CarouselModule } from 'angular4-carousel';
 
 import { HeaderComponent } from './header/header.component';
 import { FixedHeaderComponent } from './fixed-header/fixed-header.component';
@@ -22,6 +23,7 @@ import { PresentationGalleryComponent } from './presentation-gallery/presentatio
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { CarouselPortraitsComponent } from './carousel-portraits/carousel-portraits.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { ContactComponent } from './contact/contact.component';
     PresentationGalleryComponent,
     AboutComponent,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
+    CarouselPortraitsComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +47,7 @@ import { ContactComponent } from './contact/contact.component';
     MatExpansionModule,
     MatListModule,
     MatTabsModule,
+    CarouselModule,
     RouterModule.forRoot([
       {
         path: '',
