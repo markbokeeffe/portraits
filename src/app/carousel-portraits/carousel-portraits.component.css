@@ -1,4 +1,6 @@
 .portraitCarousel{
   max-width:700px;
   width:100%;
+  min-height:100px;
+  height:calc(100vw * 270.0 / 300.0);
 }

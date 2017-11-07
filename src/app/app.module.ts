@@ -14,6 +14,7 @@ import {MatExpansionModule} from '@angular/material';
 import {MatListModule} from '@angular/material';
 import {MatTabsModule} from '@angular/material';
 import { CarouselModule } from 'angular4-carousel';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { HeaderComponent } from './header/header.component';
 import { FixedHeaderComponent } from './fixed-header/fixed-header.component';
@@ -24,6 +25,7 @@ import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { CarouselPortraitsComponent } from './carousel-portraits/carousel-portraits.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { CarouselPortraitsComponent } from './carousel-portraits/carousel-portra
     AboutComponent,
     FooterComponent,
     ContactComponent,
-    CarouselPortraitsComponent
+    CarouselPortraitsComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
@@ -48,6 +51,7 @@ import { CarouselPortraitsComponent } from './carousel-portraits/carousel-portra
     MatListModule,
     MatTabsModule,
     CarouselModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
       {
         path: '',
