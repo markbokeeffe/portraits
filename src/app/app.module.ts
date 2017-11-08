@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HostListener } from '@angular/core';
-
+import { PortraitsService } from './portraits-service.service'
 
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -79,7 +79,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
       }
     ])
   ],
-  providers: [],
+  providers: [PortraitsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
