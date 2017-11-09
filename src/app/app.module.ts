@@ -14,6 +14,7 @@ import {MatExpansionModule} from '@angular/material';
 import {MatListModule} from '@angular/material';
 import {MatTabsModule} from '@angular/material';
 import { CarouselModule } from 'angular4-carousel';
+import { MatDialogModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { HeaderComponent } from './header/header.component';
@@ -52,6 +53,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     MatTabsModule,
     CarouselModule,
     ReactiveFormsModule,
+    MatDialogModule,
     RouterModule.forRoot([
       {
         path: '',

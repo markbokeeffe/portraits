@@ -1,0 +1,10 @@
+.caption{
+  position: absolute;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  bottom: 0px;
+  left: 0px;
+  text-align: center;
+  padding: 3px;
+}
