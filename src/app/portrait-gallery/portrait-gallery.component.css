@@ -8,3 +8,7 @@
   text-align: center;
   padding: 3px;
 }
+
+.mat-grid-tile img{
+  cursor:pointer;
+}

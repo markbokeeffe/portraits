@@ -1,0 +1,28 @@
+img{
+  width:100%;
+  height:auto;
+}
+
+.dialog-caption{
+  width: 100%;
+  display: block;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+  padding: 2%;
+}
+
+.mat-button{
+    min-width:auto;
+    padding:0px;
+}
+
+.mat-button:hover{
+  background-color:#fff;
+}
+
+.mat-button i{
+  font-size:2.5em;
+  color:gray;
+}

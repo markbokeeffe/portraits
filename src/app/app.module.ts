@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HostListener } from '@angular/core';
-import { PortraitsService } from './portraits-service.service'
+import { PortraitsService } from './portraits-service.service';
+import { PresentationsServiceService } from './presentations-service.service';
 
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -27,6 +28,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { CarouselPortraitsComponent } from './carousel-portraits/carousel-portraits.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { DialogPortraitsComponent } from './dialog-portraits/dialog-portraits.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     FooterComponent,
     ContactComponent,
     CarouselPortraitsComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    DialogPortraitsComponent
   ],
   imports: [
     BrowserModule,
@@ -81,7 +84,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
       }
     ])
   ],
-  providers: [PortraitsService],
+  entryComponents: [DialogPortraitsComponent],
+  providers: [PortraitsService, PresentationsServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
