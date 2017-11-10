@@ -29,6 +29,7 @@ import { ContactComponent } from './contact/contact.component';
 import { CarouselPortraitsComponent } from './carousel-portraits/carousel-portraits.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { DialogPortraitsComponent } from './dialog-portraits/dialog-portraits.component';
+import { DialogPresentationsComponent } from './dialog-presentations/dialog-presentations.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { DialogPortraitsComponent } from './dialog-portraits/dialog-portraits.co
     ContactComponent,
     CarouselPortraitsComponent,
     ContactFormComponent,
-    DialogPortraitsComponent
+    DialogPortraitsComponent,
+    DialogPresentationsComponent
   ],
   imports: [
     BrowserModule,
