@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ICarouselConfig, AnimationConfig } from 'angular4-carousel';
+import { PortraitsService } from 'app/portraits-service.service'
 
 @Component({
   selector: 'app-carousel-portraits',
@@ -8,7 +9,8 @@ import { ICarouselConfig, AnimationConfig } from 'angular4-carousel';
 })
 export class CarouselPortraitsComponent implements OnInit {
 
-  public imageSources: string[] = [
+
+   public imageSources: string[] = [
     'assets/portraits/jack-nicholson-portrait-2015.jpg',
     'assets/portraits/billieHoliday.jpg',
     'assets/portraits/morganFreeman.jpg',
@@ -57,6 +59,7 @@ export class CarouselPortraitsComponent implements OnInit {
     'assets/portraits/maryRobinson.jpg',
     'assets/portraits/mahatmaGandhi.jpg',
   ];
+;
 
   public config: ICarouselConfig = {
     verifyBeforeLoad: true,
@@ -71,7 +74,10 @@ export class CarouselPortraitsComponent implements OnInit {
 
 
 
-  constructor() { }
+    public paths: any
+  constructor(session:PortraitsService) {
+    // this.paths = session.data.map(a => a.path);
+}
 
   ngOnInit() {
   }

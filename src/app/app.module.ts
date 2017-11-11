@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HostListener } from '@angular/core';
-import { PortraitsService } from './portraits-service.service'
+import { PortraitsService } from './portraits-service.service';
+import { PresentationsServiceService } from './presentations-service.service';
 
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -14,6 +15,7 @@ import {MatExpansionModule} from '@angular/material';
 import {MatListModule} from '@angular/material';
 import {MatTabsModule} from '@angular/material';
 import { CarouselModule } from 'angular4-carousel';
+import { MatDialogModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { HeaderComponent } from './header/header.component';
@@ -26,6 +28,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { CarouselPortraitsComponent } from './carousel-portraits/carousel-portraits.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { DialogPortraitsComponent } from './dialog-portraits/dialog-portraits.component';
+import { DialogPresentationsComponent } from './dialog-presentations/dialog-presentations.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +43,9 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     FooterComponent,
     ContactComponent,
     CarouselPortraitsComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    DialogPortraitsComponent,
+    DialogPresentationsComponent
   ],
   imports: [
     BrowserModule,
@@ -52,6 +58,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     MatTabsModule,
     CarouselModule,
     ReactiveFormsModule,
+    MatDialogModule,
     RouterModule.forRoot([
       {
         path: '',
@@ -79,7 +86,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
       }
     ])
   ],
-  providers: [PortraitsService],
+  entryComponents: [DialogPortraitsComponent],
+  providers: [PortraitsService, PresentationsServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
