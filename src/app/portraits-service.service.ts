@@ -4,146 +4,193 @@ import { Injectable } from '@angular/core';
 
 export class PortraitsService {
     //userName = "Sam"
-    public data: Array<{name: string}> = [{
-      name: "Jack Nicholson"
+    public data: Array<{name: string, path: string}> = [{
+      name: "Jack Nicholson",
+      path:'assets/portraits/jack-nicholson-portrait-2015.jpg'
     },
     {
-      name: "Billie Holiday"
+      name: "Billie Holiday",
+      path:'assets/portraits/billieHoliday.jpg'
     },
     {
-      name: "Morgan Freeman"
+      name: "Morgan Freeman",
+      path:'assets/portraits/morganFreeman.jpg'
     },
     {
-      name: "Jack Charlton"
+      name: "Jack Charlton",
+      path:'assets/portraits/jackCharlton.jpg'
     },
     {
-      name: "Marilyn Monroe"
+      name: "Marilyn Monroe",
+      path:'assets/portraits/marilynMonroe.jpg'
     },
     {
-      name: "Quentin Blake"
+      name: "Quentin Blake",
+      path:'assets/portraits/quentinBlake.jpg'
     },
     {
-      name: "Liam Cosgrave"
+      name: "Liam Cosgrave",
+      path:'assets/portraits/liamCosgrave.jpg'
     },
     {
-      name: "Yulia Tymoshenko"
+      name: "Yulia Tymoshenko",
+      path:'assets/portraits/yuliaTymoshenko.jpg'
     },
     {
-      name: "Albert Einstein"
+      name: "Albert Einstein",
+      path:'assets/portraits/albertEinstein.jpg'
     },
     {
-      name: "Nora Barnacle"
+      name: "Nora Barnacle",
+      path:'assets/portraits/noraBarnacle.jpg'
     },
     {
-      name: "Tom Crean"
+      name: "Tom Crean",
+      path:'assets/portraits/tomCrean.jpg'
     },
     {
-      name: "Alfred Hitchcock"
+      name: "Alfred Hitchcock",
+      path:'assets/portraits/alfredHitchcock.jpg'
     },
     {
-      name: "Norman Wisdom"
+      name: "Norman Wisdom",
+      path:'assets/portraits/normanWisdom.jpg'
     },
     {
-      name: "Mother Teresa"
+      name: "Mother Teresa",
+      path:'assets/portraits/motherTeresa.jpg'
     },
     {
-      name: "Samuel Beckett"
+      name: "Samuel Beckett",
+      path:'assets/portraits/samuelBeckett1.jpg'
     },
     {
-      name: "Seamus Heaney"
+      name: "Seamus Heaney",
+      path:'assets/portraits/seamusHeaney.jpg'
     },
     {
-      name: "Garret FitzGerald"
+      name: "Garret FitzGerald",
+      path:'assets/portraits/garretFitzGerald.jpg'
     },
     {
-      name: "Noam Chomsky"
+      name: "Noam Chomsky",
+      path:'assets/portraits/noamChomsky.jpg'
     },
     {
-      name: "Marlene Dietrich"
+      name: "Marlene Dietrich",
+      path:'assets/portraits/marleneDietrich.jpg'
     },
     {
-      name: "Seamus Mallon"
+      name: "Seamus Mallon",
+      path:'assets/portraits/seamusMallon.jpg'
     },
     {
-      name: "Samuel Beckett"
+      name: "Samuel Beckett",
+      path:'assets/portraits/samuelBeckett2.jpg'
     },
     {
-      name: "Luan Parle"
+      name: "Luan Parle",
+      path:'assets/portraits/luanParle.jpg'
     },
     {
-      name: "B.B. King"
+      name: "B.B. King",
+      path:'assets/portraits/bbKing.jpg'
     },
     {
-      name: "Eamon de Valera"
+      name: "Eamon de Valera",
+      path:'assets/portraits/eamonDeValera.jpg'
     },
     {
-      name: "Michael Collins"
+      name: "Michael Collins",
+      path:'assets/portraits/michaelCollins.jpg'
     },
     {
-      name: "Grace Kelly"
+      name: "Grace Kelly",
+      path:'assets/portraits/graceKelly.jpg'
     },
     {
-      name: "Nelson Mandela"
+      name: "Nelson Mandela",
+      path:'assets/portraits/nelsonMandela.jpg'
     },
     {
-      name: "Samuel Beckett"
+      name: "Samuel Beckett",
+      path:'assets/portraits/samuelBeckett3.jpg'
     },
     {
-      name: "Joe Biden"
+      name: "Joe Biden",
+      path:'assets/portraits/joeBiden.jpg'
     },
     {
-      name: "Pope Francis"
+      name: "Pope Francis",
+      path:'assets/portraits/popeFrancis.jpg'
     },
     {
-      name: "Gay Byrne"
+      name: "Gay Byrne",
+      path:'assets/portraits/gayByrne.jpg'
     },
     {
-      name: "Josephine Cunningham"
+      name: "Josephine Cunningham",
+      path:'assets/portraits/josephineCunningham.jpg'
     },
     {
-      name: "Bill O'Herlihy"
+      name: "Bill O'Herlihy",
+      path:'assets/portraits/billOHerlihy.jpg'
     },
     {
-      name: "Edmund Hillary"
+      name: "Edmund Hillary",
+      path:'assets/portraits/edmundHillary.jpg'
     },
     {
-      name: "Sean MacBride"
+      name: "Sean MacBride",
+      path:'assets/portraits/seanMacBride.jpg'
     },
     {
-      name: "Joe Lynch"
+      name: "Joe Lynch",
+      path:'assets/portraits/joeLynch.jpg'
     },
     {
-      name: "James Joyce"
+      name: "James Joyce",
+      path:'assets/portraits/jamesJoyce.jpg'
     },
     {
-      name: "Michael D. Higgins"
+      name: "Michael D. Higgins",
+      path:'assets/portraits/michaelDHiggins.jpg'
     },
     {
-      name: "Louis Armstrong"
+      name: "Louis Armstrong",
+      path:'assets/portraits/louisArmstrong.jpg'
     },
     {
-      name: "Salvador Dali"
+      name: "Salvador Dali",
+      path:'assets/portraits/salvadorDali.jpg'
     },
     {
-      name: "Louis Le Brocquy"
+      name: "Louis Le Brocquy",
+      path:'assets/portraits/louisLeBrocquy.jpg'
     },
     {
-      name: "W.B. Yeats"
+      name: "W.B. Yeats",
+      path:'assets/portraits/wbYeats1.jpg'
     },
     {
-      name: "Edmund Hillary"
+      name: "Edmund Hillary",
+      path:'assets/portraits/edmundHillary2.jpg'
     },
     {
-      name: "Aung San Suu Kyi"
+      name: "Aung San Suu Kyi",
+      path:'assets/portraits/aungSanSuuKyi.jpg'
     },
     {
-      name: "Robert Ballagh"
+      name: "Robert Ballagh",
+      path:'assets/portraits/robertBallagh.jpg'
     },
     {
-      name: "Mary Robinson"
+      name: "Mary Robinson",
+      path:'assets/portraits/maryRobinson.jpg'
     },
     {
-      name: "Mahatma Gandhi"
+      name: "Mahatma Gandhi",
+      path:'assets/portraits/mahatmaGandhi.jpg'
     }]
     constructor() { }
 }
