@@ -158,7 +158,7 @@ export class PortraitsService {
     },
     {
       name: "Amy Winehouse",
-      path:'assets/portraits/amy-winehouse'
+      path:'assets/portraits/amy-winehouse.jpg'
     },
     {
       name: "Louis Armstrong",

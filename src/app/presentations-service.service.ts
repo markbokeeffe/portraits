@@ -141,7 +141,24 @@ export class PresentationsServiceService {
       name: "Chris Hadfield",
       caption: "Presentation to astronaut, Col. Chris Hadfield, on behalf of Eason, O'Connell Street.  Dublin, 2014.",
       path:'assets/presentations/chrisHadfield.jpg'
-    }]
+    },
+    {
+      name: "Mary Robinson",
+      caption: "Presentation to the former President of Ireland and former United Nations Commissioner for Human Rights, Mary Robinson.  Dublin, 2012.",
+      path:'assets/presentations/maryRobinson.jpg'
+    },
+    {
+      name: "Henry Kissinger",
+      caption: "Presentation to the former U.S. Secretary of State, Henry Kissinger.  California, 2001.",
+      path:'assets/presentations/henryKissinger.jpg'
+    },
+    {
+      name: "John Howard",
+      caption: "Presentation to the Prime Minister of Australia, John Howard.  Dublin, 2006.",
+      path:'assets/presentations/johnHoward.jpg'
+    },
+
+  ]
   constructor() { }
 
 }

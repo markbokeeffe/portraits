@@ -38,3 +38,16 @@ nav span:last-of-type span{
 a.logo.selected{
   color:#fff;
 }
+
+.matMenu, .mat-button, .mat-icon-button, .mat-raised-button{
+  display:none;
+}
+
+@media (max-width: 730px) {
+  nav{
+    display:none;
+  }
+  .matMenu, .mat-button, .mat-icon-button, .mat-raised-button{
+    display:block;
+  }
+}

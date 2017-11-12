@@ -8,7 +8,7 @@ mat-card.mat-card{
 }
 
 mat-card.image-card{
-  width: 100%;
+  width: 90%;
   max-width: 600px;
 }
 

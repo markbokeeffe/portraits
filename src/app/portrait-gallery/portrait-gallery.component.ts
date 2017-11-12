@@ -29,7 +29,7 @@ export class PortraitGalleryComponent implements OnInit {
       }
     }
 
-    @HostListener('window:resize', ['$event']) doSomething(){
+    @HostListener('window:resize', ['$event']) reset(){
       this.calculateColumnNumber();
     }
 
@@ -40,7 +40,7 @@ openDialog(portrait): void {
  }
 
   ngOnInit() {
-
+    this.calculateColumnNumber();
   }
 
 }

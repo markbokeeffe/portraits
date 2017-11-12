@@ -1,0 +1,12 @@
+h2, p{
+    font-family: 'Roboto Slab', serif !important;
+}
+
+.mat-card, .mat-card:not([class*=mat-elevation-z]){
+  box-shadow:none;
+}
+
+a{
+  color:gray;
+  text-decoration: none;
+}

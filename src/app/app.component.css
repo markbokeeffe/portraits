@@ -11,3 +11,10 @@
 .site-content, .site-content *{
   box-sizing: border-box;
 }
+
+
+@media (max-width: 730px) {
+  .site-content{
+    margin-top:202px;
+  }
+}

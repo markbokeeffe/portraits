@@ -11,4 +11,5 @@
 
 .mat-grid-tile img{
   cursor:pointer;
+  width:100%;
 }

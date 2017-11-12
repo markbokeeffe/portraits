@@ -1,4 +1,4 @@
-<mat-grid-list cols="{{colNum}}" rowHeight="1:0.7">
+<mat-grid-list cols="{{colNum}}" rowHeight="1:1.3">
   <mat-grid-tile *ngFor="let portrait of portraits; let i = index">
     <img (click)="openDialog(portrait)" src="{{portrait.path}}" alt="{{portrait.name}}"/>
     <span class="caption">{{portrait.name}}</span>

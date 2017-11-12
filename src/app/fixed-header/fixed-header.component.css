@@ -28,3 +28,16 @@
   margin: -13px auto 0;
   opacity:1;
 }
+
+@media (max-width: 730px) {
+  .cta-header-title{
+    font-size:30px;
+    line-height:1.5;
+  }
+
+  .cta-header{
+    height:146px;
+    top:56px;
+  }
+
+}

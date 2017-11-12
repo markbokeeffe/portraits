@@ -10,4 +10,8 @@
       <span class="slash">/</span>
     </span>
   </nav>
+  <button mat-button [matMenuTriggerFor]="menu"><i class="material-icons">&#xE8FE;</i></button>
+  <mat-menu #menu="matMenu">
+    <button routerLink="/{{screen.path}}" *ngFor="let screen of screens; let i = index" mat-menu-item>{{ screen.name }}</button>
+  </mat-menu>
 </mat-toolbar>
