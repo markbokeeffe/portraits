@@ -1,4 +1,21 @@
+p, .mat-tab-label{
+  font-family: 'Roboto Slab', serif !important;
+}
+
 mat-card.mat-card{
   width:90%;
   margin:0 auto;
+}
+
+mat-card.image-card{
+  width: 100%;
+  max-width: 600px;
+}
+
+mat-card.image-card img{
+  width:100%;
+}
+
+mat-card.image-card iframe{
+  width:100%;
 }
