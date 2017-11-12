@@ -1,3 +1,12 @@
-<p>
-  dialog-presentations works!
-</p>
+<div mat-dialog-actions align="end">
+  <span class="fill-space"></span>
+  <button mat-button (click)="dialogRef.close()">
+    <i class="material-icons">highlight_off</i>
+  </button>
+</div>
+
+<div mat-dialog-content>
+  <h3 class="presentationTitle">{{presentation.caption}}</h3>
+  <img src="{{presentation.path}}"/>
+  <span class="dialog-caption">{{presentation.name}}</span>
+</div>

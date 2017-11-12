@@ -86,7 +86,7 @@ import { DialogPresentationsComponent } from './dialog-presentations/dialog-pres
       }
     ])
   ],
-  entryComponents: [DialogPortraitsComponent],
+  entryComponents: [DialogPortraitsComponent, DialogPresentationsComponent],
   providers: [PortraitsService, PresentationsServiceService],
   bootstrap: [AppComponent]
 })

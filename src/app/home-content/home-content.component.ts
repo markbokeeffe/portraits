@@ -6,7 +6,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
   styleUrls: ['./home-content.component.css']
 })
 export class HomeContentComponent implements OnInit {
-  colNum = 6;
+  colNum = 2;
   public innerWidth: any;
 
   constructor() { }

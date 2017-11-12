@@ -14,7 +14,6 @@ export class PresentationGalleryComponent implements OnInit {
   presentation: any;
   constructor(session:PresentationsServiceService, public dialog: MatDialog) {
     this.presentations = session.data;
-    console.log(this.presentations)
   }
 
   openDialog(presentation): void {

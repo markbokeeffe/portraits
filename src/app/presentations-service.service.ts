@@ -135,7 +135,7 @@ export class PresentationsServiceService {
     {
       name: "F.W. De Klerk",
       caption: "Presentation to the former President of South Africa, F.W. De Klerk.  Dublin, 2004.",
-      path:'assets/presentations/fwDeKlerk.JPG'
+      path:'assets/presentations/fwDeKlerk.jpg'
     },
     {
       name: "Chris Hadfield",
