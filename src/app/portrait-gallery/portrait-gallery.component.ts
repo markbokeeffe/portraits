@@ -12,7 +12,7 @@ import { DialogPortraitsComponent } from 'app/dialog-portraits/dialog-portraits.
 export class PortraitGalleryComponent implements OnInit {
   public portraits: any;
   portrait: any;
-  colNum = 6;
+  colNum = 5;
   public innerWidth: any;
   constructor(session:PortraitsService, public dialog: MatDialog) {
     this.portraits = session.data;

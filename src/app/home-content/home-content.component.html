@@ -1,19 +1,44 @@
 <div class="home-content">
-  <mat-toolbar class="content-bar">"It is an amazing likeness" - Desmond Tutu</mat-toolbar>
+  <mat-toolbar class="content-bar">
+    <span class="directQuote">"It is an amazing likeness"</span> - Desmond Tutu
+  </mat-toolbar>
   <div class="home-content-area">
-    Home content area
-
-  <mat-grid-list cols="{{colNum}}" rowHeight="1:1">
-    <mat-grid-tile class="tile1">1</mat-grid-tile>
-    <mat-grid-tile class="tile2">2</mat-grid-tile>
-    <mat-grid-tile class="tile3">3</mat-grid-tile>
-    <mat-grid-tile class="tile4">4</mat-grid-tile>
-    <mat-grid-tile class="tile5">5</mat-grid-tile>
-    <mat-grid-tile class="tile6">6</mat-grid-tile>
-    <mat-grid-tile class="tile7">7</mat-grid-tile>
-    <mat-grid-tile class="tile8">8</mat-grid-tile>
-    <mat-grid-tile class="tile9">9</mat-grid-tile>
-    <mat-grid-tile class="tile10">10</mat-grid-tile>
+  <mat-grid-list cols="{{colNum}}" rowHeight="1:1.33">
+    <mat-grid-tile class="tile1">
+      <mat-card>
+        <h1>Pencil Portraits</h1>
+        <h2>by Mark O'Keeffe</h2>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <img src="{{tiles[0].path}}" alt="{{tiles[0].description}}"/>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <img src="{{tiles[4].path}}" alt="{{tiles[4].description}}"/>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <img src="{{tiles[1].path}}" alt="{{tiles[1].description}}"/>
+    </mat-grid-tile>
+    <mat-grid-tile class="tileDark">
+      <mat-card>
+        <div class="quote" *ngFor="let quote of quotes; let i = index">
+          <h2>"{{quote.quotation}}"</h2>
+          <h3>- {{quote.person}}</h3>
+        </div>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <img src="{{tiles[2].path}}" alt="{{tiles[2].description}}"/>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <img src="{{tiles[6].path}}" alt="{{tiles[6].description}}"/>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <img src="{{tiles[3].path}}" alt="{{tiles[3].description}}"/>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <img src="{{tiles[5].path}}" alt="{{tiles[5].description}}"/>
+    </mat-grid-tile>
   </mat-grid-list>
 
 

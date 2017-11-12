@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
 .footer{
   width: 100%;
   box-sizing: border-box;
   padding: 10px 2%;
   text-align: center;
-  font-size: 11px;
+  font-size: 15px;
+  font-family: 'Roboto Slab', serif;
 }

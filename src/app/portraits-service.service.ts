@@ -157,6 +157,10 @@ export class PortraitsService {
       path:'assets/portraits/michaelDHiggins.jpg'
     },
     {
+      name: "Amy Winehouse",
+      path:'assets/portraits/amy-winehouse'
+    },
+    {
       name: "Louis Armstrong",
       path:'assets/portraits/louisArmstrong.jpg'
     },
