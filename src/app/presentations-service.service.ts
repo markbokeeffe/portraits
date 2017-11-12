@@ -60,7 +60,7 @@ export class PresentationsServiceService {
     {
       name: "Bertie Ahern",
       caption: "Presentation to the then Taoiseach, Bertie Ahern.  Dublin, 2003.",
-      path:'assets/presentations/bertieAhern.jpg'
+      path:'assets/presentations/bertieAhern.JPG'
     },
     {
       name: "Alex Ferguson",
@@ -129,13 +129,13 @@ export class PresentationsServiceService {
     },
     {
       name: "T.K. Whitaker",
-      caption: "PPresentation to the public servant, T.K. Whitaker.  Dublin, 2005.",
+      caption: "Presentation to the public servant, T.K. Whitaker.  Dublin, 2005.",
       path:'assets/presentations/tkWhitaker.jpg'
     },
     {
       name: "F.W. De Klerk",
       caption: "Presentation to the former President of South Africa, F.W. De Klerk.  Dublin, 2004.",
-      path:'assets/presentations/fwDeKlerk.jpg'
+      path:'assets/presentations/fwDeKlerk.JPG'
     },
     {
       name: "Chris Hadfield",

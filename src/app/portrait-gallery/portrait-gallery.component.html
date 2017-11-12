@@ -1,5 +1,3 @@
-<!--<app-carousel-portraits></app-carousel-portraits>-->
-
 <mat-grid-list cols="5" rowHeight="1:1.3">
   <mat-grid-tile *ngFor="let portrait of portraits; let i = index">
     <img (click)="openDialog(portrait)" src="{{portrait.path}}" alt="{{portrait.name}}"/>
