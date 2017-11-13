@@ -4,6 +4,9 @@
 
 body{
   margin:0px;
+}
+
+body, .mat-tab-label, .mat-tab-link{
   font-family: 'Roboto Slab', serif !important;
 }
 
@@ -17,4 +20,18 @@ body{
 
 .carousel-nav-list{
   display:none !important;
+}
+
+@media (max-width: 730px) {
+
+  .headQuote{
+    font-size:14px;
+  }
+}
+
+
+@media (max-width: 599px) {
+  .content-bar.fixed .mat-toolbar-row{
+    height:35px;
+  }
 }
