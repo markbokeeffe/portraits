@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { HostListener } from '@angular/core';
 import { PortraitsService } from './portraits-service.service';
 import { PresentationsServiceService } from './presentations-service.service';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -87,7 +88,7 @@ import { DialogPresentationsComponent } from './dialog-presentations/dialog-pres
     ])
   ],
   entryComponents: [DialogPortraitsComponent, DialogPresentationsComponent],
-  providers: [PortraitsService, PresentationsServiceService],
+  providers: [PortraitsService, PresentationsServiceService, {provide: LocationStrategy, useClass:HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
